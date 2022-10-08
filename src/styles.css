@@ -15,10 +15,6 @@ body {
   justify-content: center;
 }
 
-.hidden {
-  display: none;
-}
-
 .main {
   background: #fff;
   border-radius: 25px;
@@ -36,7 +32,8 @@ body {
 }
 
 .illustrations-container {
-  background-image: url("images/illustration-box-desktop.svg");
+  background-image: url("/images/bg-pattern-desktop.svg");
+  background-size: cover;
 }
 
 .woman-working {
@@ -61,8 +58,26 @@ h4 {
   font-weight: 200;
 }
 
-.active-question {
+h4:hover,
+.question-wrapper img:hover {
+  cursor: pointer;
+}
+
+p {
+  display: none;
+}
+
+.active-question h4 {
   font-weight: 700;
+}
+
+.active-question p {
+  display: block;
+  font-size: 12px;
+}
+
+.active-question img {
+  transform: scale(-1);
 }
 
 .question-wrapper {
