@@ -66,6 +66,9 @@ body {
   z-index: 5;
 }
 
+.woman-working-mobile {
+  display: none;
+}
 .faq-container {
   height: 450px;
   margin: 50px 40px 50px 10px;
@@ -113,4 +116,55 @@ p {
 .question-wrapper img {
   float: right;
   margin-top: 9px;
+}
+
+@media (max-width: 400px) {
+  .main {
+    margin: 50px 10px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .illustrations-container {
+    background-image: url("/images/bg-pattern-mobile.svg");
+    background-position-x: 67px;
+    background-position-y: 0px;
+    background-size: 250px;
+    height: 125px;
+    overflow: visible;
+  }
+
+  .woman-working-mobile {
+    bottom: 45px;
+    display: block;
+    left: 67px;
+    position: absolute;
+    width: 250px;
+  }
+
+  .woman-working,
+  .box {
+    display: none;
+  }
+  .faq-container {
+    height: 350px;
+    margin: 0 auto 20px;
+    padding-right: 7px;
+    width: 300px;
+  }
+
+  h1 {
+    margin: 10px 0;
+    text-align: center;
+  }
+  h4 {
+    font-size: 14px;
+  }
+
+  h4:hover,
+  .question-wrapper img:hover {
+    color: #000;
+  }
 }
