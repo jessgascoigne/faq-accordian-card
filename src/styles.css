@@ -9,6 +9,7 @@
 body {
   align-items: center;
   background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  flex-direction: column;
   font-family: var(--font);
   display: flex;
   min-height: 100vh;
@@ -118,9 +119,26 @@ p {
   margin-top: 9px;
 }
 
+.footer {
+  color: hsl(240, 5%, 91%);
+  font-weight: 400;
+  margin-top: 20px;
+}
+.footer a {
+  color: #e2ac00;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
 @media (max-width: 400px) {
+  .body {
+    display: block;
+  }
   .main {
-    margin: 50px 10px;
+    margin: 50px 30px 15px;
+    width: 350px;
   }
 
   .grid {
@@ -129,7 +147,7 @@ p {
 
   .illustrations-container {
     background-image: url("/images/bg-pattern-mobile.svg");
-    background-position-x: 67px;
+    background-position-x: 50px;
     background-position-y: 0px;
     background-size: 250px;
     height: 125px;
@@ -139,7 +157,7 @@ p {
   .woman-working-mobile {
     bottom: 45px;
     display: block;
-    left: 67px;
+    left: 50px;
     position: absolute;
     width: 250px;
   }
@@ -166,5 +184,12 @@ p {
   h4:hover,
   .question-wrapper img:hover {
     color: #000;
+  }
+
+  .footer {
+    margin-top: 0;
+  }
+  .footer a:hover {
+    text-decoration: none;
   }
 }
