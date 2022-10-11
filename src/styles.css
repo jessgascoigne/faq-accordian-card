@@ -83,7 +83,7 @@ h1 {
 h4 {
   font-size: 15px;
   font-weight: 200;
-  transition: all 150ms ease-in-out;
+  transition: all 100ms ease-in-out;
 }
 
 h4:hover,
@@ -99,6 +99,10 @@ p {
 
 .active-question h4 {
   font-weight: 700;
+}
+
+.active-question h4:hover {
+  color: #000;
 }
 
 .active-question p {
